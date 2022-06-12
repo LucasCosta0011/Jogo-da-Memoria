@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<shape
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:shape="rectangle" >
+
+  // A cor do background (fundo) #FBF8F8
+  // <solid android:color="#8B0000" />
+  // Borda (tamanho e cor)
+  <stroke android:width="1dip" android:color="#030101" />
+
+  // Arredondamento das bordas
+  <corners
+		android:bottomRightRadius="10dp"
+		android:bottomLeftRadius="10dp"
+		android:topLeftRadius="10dp"
+		android:topRightRadius="10dp"/>
+  <padding
+		android:bottom="15dp"
+		android:left="15dp"
+		android:right="15dp"
+		android:top="15dp"/>
+</shape>
