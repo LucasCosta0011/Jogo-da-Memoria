@@ -4,7 +4,7 @@
 
 ##
 
-## link para download da primeira versãp:
+## link para download da primeira versão:
 
 ## https://github.com/LucasCosta0011/jogo-da-memoria/blob/main/JogoMemoria.apk
 
