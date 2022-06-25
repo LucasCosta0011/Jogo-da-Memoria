@@ -116,7 +116,7 @@ namespace JogoMemoria
             {
                 alerta.SetButton("Próxima fase", (s, ev) =>
                 {
-                    Intent intent = new Intent(this, typeof(MainActivity));
+                    Intent intent = new Intent(this, typeof(AtividadeFase3));
                     StartActivity(intent);
                 });
                 alerta.SetButton2("Jogar novamente", (s, ev) =>

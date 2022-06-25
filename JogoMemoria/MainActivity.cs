@@ -29,7 +29,6 @@ namespace JogoMemoria
         int[] verificador;
         string[] fruits = new string[8];
         int posicao;
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -112,8 +111,6 @@ namespace JogoMemoria
                     restartGame();
                 });
             }
-
-           
             alerta.Show();
         }
         public void setFruits(int p)
@@ -140,6 +137,7 @@ namespace JogoMemoria
                 img[p].SetBackgroundResource(Resource.Drawable.melancia_cartoon);
                 img[p].Enabled = false;
             }
+
             cartaCount++;
             if (cartaCount ==  1)
             {
@@ -175,6 +173,7 @@ namespace JogoMemoria
                 }
             }
         }
+
         public void temporizador2()
         {
             timer2 = new Timer();
@@ -235,6 +234,7 @@ namespace JogoMemoria
 
             return camposBtn;
         }
+
         public void setDefaultStyle()
         {
             ImageButton[] btnImgCampos = getBtn();
@@ -244,6 +244,7 @@ namespace JogoMemoria
                 btnImgCampos[i].Enabled = true;
             }
         }
+
         public bool existe(int[] posicoes, int posicao, int tamanho)
         {
             bool valor = false;
@@ -275,8 +276,8 @@ namespace JogoMemoria
                 }
                 posicoes[i] = posicao;
 
-               
                 ImageButton[] btn = getBtn();
+
                 if (posicoes[i] == 1)
                 {
                     fruits[i] = "pear";
@@ -311,7 +312,7 @@ namespace JogoMemoria
                     fruits[i] = "orange";
                     btn[i].SetBackgroundResource(Resource.Drawable.laranja_cartoon);
                 }
-                else if (posicoes[i] == 8)
+                else
                 {
                     fruits[i] = "watermelon";
                     btn[i].SetBackgroundResource(Resource.Drawable.melancia_cartoon);

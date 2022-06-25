@@ -48,6 +48,11 @@
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -57,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AtividadeFase2.cs" />
+    <Compile Include="AtividadeFase3.cs" />
     <Compile Include="AtividadeTelaPrincipal.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -153,6 +159,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\tela_fase_2.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fconde_cartoon.png" />
+    <AndroidResource Include="Resources\drawable\caqui_cartoon.png" />
+    <AndroidResource Include="Resources\drawable\carambola_cartoon.png" />
+    <AndroidResource Include="Resources\drawable\coco_cartoon.png" />
+    <AndroidResource Include="Resources\layout\tela_fase_3.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
